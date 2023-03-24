@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: poppins;
+  width: 600px;
+  align-items: center;
+  z-index: 5;
+}
+
+.welcome-message {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  line-height: 3.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem 1rem;
+  border-radius: 30px;
+}
+
+.enter-task {
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  margin: 1.5rem 0 0 0;
+  padding: 1.3rem 2rem;
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.199);
+}
+
+.enter-task h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.enter-task input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+  margin: 4rem 0 0 0;
+  border-radius: 5px;
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.199);
+}
+
+.checked {
+  color: rgb(151, 148, 148);
+  text-decoration: line-through;
+}
+
+.time {
+  font-size: 8rem;
+  margin: 0.8rem 0 0 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem 3rem;
+  border-radius: 30px;
+}
+
+.name {
+  color: rgb(212, 182, 11);
+}
+
+.task-value {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+img {
+  width: 17px;
+  cursor: pointer;
+}
+
+.show {
+  display: none;
+}
+
+#uploadImage {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(0, 132, 255);
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 1.3rem;
+  cursor: pointer;
+}
+
+.upload-background-image {
+  margin: 2rem 0 0 0;
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.199);
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 670px) {
+  .time {
+    font-size: 5rem;
+  }
+
+  main {
+    width: 400px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}

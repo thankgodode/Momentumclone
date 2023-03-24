@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <main>
+      <div class="time">00:00</div>
+      <div class="welcome-message">
+        <h2>
+          <span class="greeting"></span>
+          <span
+            contenteditable="true"
+            style="outline: none"
+            class="name"
+          ></span>
+        </h2>
+      </div>
+      <div class="enter-task">
+        <input
+          type="text"
+          name=""
+          class="task"
+          placeholder="What is your main focus for today?"
+        />
+      </div>
+      <div class="container" style="display: none"></div>
+      <div class="upload-background-image">
+        <input
+          type="file"
+          id="imageUpload"
+          accept="image/*"
+          name="profile-pic"
+          style="display: none"
+        />
+        <label id="uploadImage" for="imageUpload"
+          >Select background image</label
+        >
+      </div>
+    </main>
+    <script src="js/time.js"></script>
+    <script src="js/greetPerson.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/uploadBackground.js"></script>
+  </body>
+</html>
